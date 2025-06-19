@@ -29,7 +29,7 @@ const mergeToBranches = async () => {
   //   }
 
   /** Инициализация пользователя для работы с git в рамках CI */
-  gitInitCI(CI_VARIABLES.CI_REPO_URL);
+  // gitInitCI(CI_VARIABLES.CI_REPO_URL);
 
   const sourceBranch = CI_VARIABLES.CI_COMMIT_BRANCH;
   const targetBranches = options.targets.split(',').map((b) => b.trim());
